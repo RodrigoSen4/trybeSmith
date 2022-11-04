@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import ProductService from '../service/product.service';
 
-class ProductController {
+export default class ProductController {
   constructor(private productService = new ProductService()) { }
 
   async create(req: Request, res: Response) {
@@ -15,5 +15,3 @@ class ProductController {
     res.status(200).json(products);
   }
 }
-
-export default ProductController;

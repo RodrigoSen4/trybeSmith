@@ -17,6 +17,7 @@ export default class ProductModel {
     );
     const { insertId: id } = result;
     const newProduct: Product = { id, name, amount };
+    
     return newProduct;
   }
 
