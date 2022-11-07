@@ -13,4 +13,9 @@ export default class UserService {
     const newUser: User = await this.model.create(user);
     return newUser;
   }
+
+  async checkUser(user: User):Promise<User> {
+    const check: User = await this.model.checkUser(user);
+    return check;
+  }
 }

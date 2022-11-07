@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use('/products', routes.productsRouter);
 app.use('/users', routes.userRouter);
+app.use('/login', routes.loginRouter);
 app.use('/orders', routes.orderRouter);
 
 export default app;
