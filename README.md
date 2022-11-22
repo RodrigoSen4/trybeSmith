@@ -53,11 +53,6 @@ Foi desenvolvido todas as camadas da aplicação (Models, Service e Controllers)
 </details>
 
 
-
-
-
-
-
 # Endpoints API
 
 Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize a extensao THUNDER CLIENT no vscode
@@ -66,8 +61,8 @@ Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize
 <details>
   <summary><strong>Endpoint para o cadastro de produtos</strong></summary><br />
 
-  O endpoint é acessível através do caminho (`/products`);
-  Os produtos enviados são salvos na tabela `Products` do banco de dados;
+ - O endpoint é acessível através do caminho (`/products`);
+ - Os produtos enviados são salvos na tabela `Products` do banco de dados;
   - O endpoint deve receber a seguinte estrutura:
 ```json
   {
@@ -81,7 +76,48 @@ Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize
 <details>
   <summary><strong>Endpoint para listar produtos cadastrados</strong></summary><br />
 
-  O endpoint é acessível através do caminho (`/products`);
+ - O endpoint é acessível através do caminho (`/products`);
+
   ✨ **Dica:** Lembre-se de colocar o metodo GET no THUNDER CLIENT
 </details>
 
+<details>
+  <summary><strong>Endpoint para o cadastro de pessoas usuárias</strong></summary><br />
+
+ - O endpoint é acessível através do caminho (`/users`);
+ - As informações das pessoas usuárias são salvas na tabela `Users` do banco de dados
+ - O endpoint deve receber a seguinte estrutura:
+```json
+{ 
+  "username": "user",
+  "classe": "mage",
+  "level": 10,
+  "password": "password"
+}
+```
+  ✨ **Dica:** Lembre-se de colocar o metodo POST no THUNDER CLIENT
+</details>
+
+<details>
+  <summary><strong>Endpoint para listar todos os pedidos</strong></summary><br />
+
+ - O endpoint é acessível através do caminho (`/orders`);
+ - Essa rota retorna todos os pedidos e os `id`s dos produtos associados a estes.
+  ✨ **Dica:** Lembre-se de colocar o metodo GET no THUNDER CLIENT
+</details>
+
+<details>
+  <summary><strong>Endpoint para login de pessoas usuarias</strong></summary><br />
+
+ - O endpoint é acessível através do caminho (`/login`);
+ - A rota deve receber os campos `username` e `password`, e esses campos são validados no banco de dados.
+ - Um token `JWT` é gerado e retornado caso haja sucesso no _login_.
+ - O endpoint deve receber a seguinte estrutura:
+```json
+  {
+    "username": "string",
+    "password": "string"
+  }
+```
+  ✨ **Dica:** Lembre-se de colocar o metodo POST no THUNDER CLIENT
+</details>
