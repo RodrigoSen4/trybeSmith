@@ -53,9 +53,9 @@ Foi desenvolvido todas as camadas da aplicação (Models, Service e Controllers)
 </details>
 
 
-# Endpoints API
+# Endpoints existentes na API
 
-Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize a extensao THUNDER CLIENT no vscode
+Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize a extensão THUNDER CLIENT no vscode
 
 
 <details>
@@ -103,6 +103,7 @@ Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize
 
  - O endpoint é acessível através do caminho (`/orders`);
  - Essa rota retorna todos os pedidos e os `id`s dos produtos associados a estes.
+
   ✨ **Dica:** Lembre-se de colocar o metodo GET no THUNDER CLIENT
 </details>
 
