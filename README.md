@@ -53,6 +53,11 @@ Foi desenvolvido todas as camadas da aplicação (Models, Service e Controllers)
 </details>
 
 
+
+
+
+
+
 # Endpoints API
 
 Para ver de fato a API funcionando use os endpoints abaixo, para usa-los utilize a extensao THUNDER CLIENT no vscode
